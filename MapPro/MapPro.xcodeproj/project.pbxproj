@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		641142FE17F4792A006A7899 /* ModelData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 641142FC17F4792A006A7899 /* ModelData.cpp */; };
+		6411430117F47E13006A7899 /* Model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 641142FF17F47E13006A7899 /* Model.cpp */; };
+		6425338317F4F843009326A1 /* AbstractObserver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6425338117F4F843009326A1 /* AbstractObserver.cpp */; };
 		643DCA1917F32BAC0056E347 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 643DCA1817F32BAC0056E347 /* QuartzCore.framework */; };
 		643DCA1B17F32BAC0056E347 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 643DCA1A17F32BAC0056E347 /* OpenGLES.framework */; };
 		643DCA1D17F32BAC0056E347 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 643DCA1C17F32BAC0056E347 /* OpenAL.framework */; };
@@ -281,13 +284,20 @@
 		643DCDBC17F32BB30056E347 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 643DCDBB17F32BB30056E347 /* AppDelegate.cpp */; };
 		643DCDBF17F32BB30056E347 /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 643DCDBE17F32BB30056E347 /* HelloWorldScene.cpp */; };
 		643DCDC717F32E0C0056E347 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = 643DCDC617F32E0C0056E347 /* map.png */; };
-		643DCE9B17F33E800056E347 /* AbstractModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 643DCE9917F33E800056E347 /* AbstractModel.cpp */; };
 		643DCEA317F34A990056E347 /* EventDispatcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 643DCEA117F34A990056E347 /* EventDispatcher.cpp */; };
+		64F0E7A817F51DEF002FB3D9 /* Command.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64F0E7A617F51DEF002FB3D9 /* Command.cpp */; };
+		64F0E7AF17F520B6002FB3D9 /* Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64F0E7AD17F520B6002FB3D9 /* Controller.cpp */; };
 		64FF384217F3A80600ABAB9D /* GroupItem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64FF384017F3A80600ABAB9D /* GroupItem.cpp */; };
 		64FF384517F3A81100ABAB9D /* Group.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64FF384317F3A81100ABAB9D /* Group.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		641142FC17F4792A006A7899 /* ModelData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ModelData.cpp; sourceTree = "<group>"; };
+		641142FD17F4792A006A7899 /* ModelData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelData.h; sourceTree = "<group>"; };
+		641142FF17F47E13006A7899 /* Model.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Model.cpp; sourceTree = "<group>"; };
+		6411430017F47E13006A7899 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		6425338117F4F843009326A1 /* AbstractObserver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AbstractObserver.cpp; sourceTree = "<group>"; };
+		6425338217F4F843009326A1 /* AbstractObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractObserver.h; sourceTree = "<group>"; };
 		643DCA1517F32BAC0056E347 /* MapPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		643DCA1817F32BAC0056E347 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		643DCA1A17F32BAC0056E347 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -879,10 +889,12 @@
 		643DCDBD17F32BB30056E347 /* HelloWorldScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HelloWorldScene.h; path = Classes/HelloWorldScene.h; sourceTree = "<group>"; };
 		643DCDBE17F32BB30056E347 /* HelloWorldScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = HelloWorldScene.cpp; path = Classes/HelloWorldScene.cpp; sourceTree = "<group>"; };
 		643DCDC617F32E0C0056E347 /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
-		643DCE9917F33E800056E347 /* AbstractModel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AbstractModel.cpp; sourceTree = "<group>"; };
-		643DCE9A17F33E800056E347 /* AbstractModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractModel.h; sourceTree = "<group>"; };
 		643DCEA117F34A990056E347 /* EventDispatcher.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EventDispatcher.cpp; sourceTree = "<group>"; };
 		643DCEA217F34A990056E347 /* EventDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventDispatcher.h; sourceTree = "<group>"; };
+		64F0E7A617F51DEF002FB3D9 /* Command.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Command.cpp; sourceTree = "<group>"; };
+		64F0E7A717F51DEF002FB3D9 /* Command.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Command.h; sourceTree = "<group>"; };
+		64F0E7AD17F520B6002FB3D9 /* Controller.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Controller.cpp; sourceTree = "<group>"; };
+		64F0E7AE17F520B6002FB3D9 /* Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Controller.h; sourceTree = "<group>"; };
 		64FF384017F3A80600ABAB9D /* GroupItem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GroupItem.cpp; sourceTree = "<group>"; };
 		64FF384117F3A80600ABAB9D /* GroupItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupItem.h; sourceTree = "<group>"; };
 		64FF384317F3A81100ABAB9D /* Group.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Group.cpp; sourceTree = "<group>"; };
@@ -911,6 +923,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		641142F917F4728A006A7899 /* mvc */ = {
+			isa = PBXGroup;
+			children = (
+				641142FB17F478A2006A7899 /* controller */,
+				641142FA17F4789C006A7899 /* model */,
+			);
+			name = mvc;
+			sourceTree = "<group>";
+		};
+		641142FA17F4789C006A7899 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				641142FC17F4792A006A7899 /* ModelData.cpp */,
+				641142FD17F4792A006A7899 /* ModelData.h */,
+				641142FF17F47E13006A7899 /* Model.cpp */,
+				6411430017F47E13006A7899 /* Model.h */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		641142FB17F478A2006A7899 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				64F0E7A617F51DEF002FB3D9 /* Command.cpp */,
+				64F0E7A717F51DEF002FB3D9 /* Command.h */,
+				64F0E7AD17F520B6002FB3D9 /* Controller.cpp */,
+				64F0E7AE17F520B6002FB3D9 /* Controller.h */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		6425338017F4F7DC009326A1 /* observer */ = {
+			isa = PBXGroup;
+			children = (
+				6425338117F4F843009326A1 /* AbstractObserver.cpp */,
+				6425338217F4F843009326A1 /* AbstractObserver.h */,
+			);
+			name = observer;
+			sourceTree = "<group>";
+		};
 		643DCA0C17F32BAC0056E347 = {
 			isa = PBXGroup;
 			children = (
@@ -2130,8 +2182,6 @@
 		643DCE9817F337290056E347 /* model */ = {
 			isa = PBXGroup;
 			children = (
-				643DCE9917F33E800056E347 /* AbstractModel.cpp */,
-				643DCE9A17F33E800056E347 /* AbstractModel.h */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -2139,6 +2189,8 @@
 		643DCE9C17F340290056E347 /* core */ = {
 			isa = PBXGroup;
 			children = (
+				6425338017F4F7DC009326A1 /* observer */,
+				641142F917F4728A006A7899 /* mvc */,
 				64FF383F17F3A7D600ABAB9D /* group */,
 				643DCEA417F34B410056E347 /* event */,
 			);
@@ -2488,10 +2540,14 @@
 				643DCDAE17F32BB30056E347 /* cpVect.c in Sources */,
 				643DCDBC17F32BB30056E347 /* AppDelegate.cpp in Sources */,
 				643DCDBF17F32BB30056E347 /* HelloWorldScene.cpp in Sources */,
-				643DCE9B17F33E800056E347 /* AbstractModel.cpp in Sources */,
 				643DCEA317F34A990056E347 /* EventDispatcher.cpp in Sources */,
 				64FF384217F3A80600ABAB9D /* GroupItem.cpp in Sources */,
 				64FF384517F3A81100ABAB9D /* Group.cpp in Sources */,
+				641142FE17F4792A006A7899 /* ModelData.cpp in Sources */,
+				6411430117F47E13006A7899 /* Model.cpp in Sources */,
+				6425338317F4F843009326A1 /* AbstractObserver.cpp in Sources */,
+				64F0E7A817F51DEF002FB3D9 /* Command.cpp in Sources */,
+				64F0E7AF17F520B6002FB3D9 /* Controller.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2524,7 +2580,7 @@
 					"\"$(PROJECT_NAME)/libs/cocos2dx/platform/third_party/ios\"",
 					"\"$(PROJECT_NAME)/libs/cocos2dx/platform/ios\"",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -2553,7 +2609,7 @@
 					"\"$(PROJECT_NAME)/libs/cocos2dx/platform/third_party/ios\"",
 					"\"$(PROJECT_NAME)/libs/cocos2dx/platform/ios\"",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -14,7 +14,7 @@
 
 #endif /* defined(__MapPro__GroupItem__) */
 NS_CC_BEGIN
-class GroupItem
+class GroupItem : public CCObject
 {
 public:
     char *name;

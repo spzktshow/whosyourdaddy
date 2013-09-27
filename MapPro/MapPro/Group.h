@@ -19,9 +19,17 @@ class Group
 public:
     Group();
     ~Group();
+    
     int checkItem(const char *name);
-int addItem(GroupItem *groupItem);
-GroupItem* removeItem(const char *name);
+    GroupItem* getItem(const char *name);
+    GroupItem* getItemIndex(int index);
+    
+    int addItem(GroupItem *groupItem);
+    int addItemIndex(GroupItem *groupItem, int index);
+    
+    GroupItem* removeItem(const char *name);
+    GroupItem* removeItemIndex(int index);
+    void removeAll();
 protected:
     CCArray* items;
 };

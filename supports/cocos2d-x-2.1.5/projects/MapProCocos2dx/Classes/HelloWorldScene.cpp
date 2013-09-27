@@ -1,13 +1,6 @@
 #include "HelloWorldScene.h"
-#include "SimpleAudioEngine.h"
-#include <hash_map.h>
-#include <string>
-#include <iostream>
-#include "CCDictionary.h"
 
-using namespace std;
-using namespace cocos2d;
-using namespace CocosDenshion;
+USING_NS_CC;
 
 CCScene* HelloWorld::scene()
 {
@@ -33,6 +26,9 @@ bool HelloWorld::init()
     {
         return false;
     }
+    
+    CCSize visibleSize = CCDirector::sharedDirector()->getVisibleSize();
+    CCPoint origin = CCDirector::sharedDirector()->getVisibleOrigin();
 
     /////////////////////////////
     // 2. add a menu item with "X" image, which is clicked to quit the program
@@ -43,12 +39,14 @@ bool HelloWorld::init()
                                         "CloseNormal.png",
                                         "CloseSelected.png",
                                         this,
-                                        menu_selector(HelloWorld::menuCloseCallback) );
-    pCloseItem->setPosition( ccp(CCDirector::sharedDirector()->getWinSize().width - 20, 20) );
+                                        menu_selector(HelloWorld::menuCloseCallback));
+    
+	pCloseItem->setPosition(ccp(origin.x + visibleSize.width - pCloseItem->getContentSize().width/2 ,
+                                origin.y + pCloseItem->getContentSize().height/2));
 
     // create menu, it's an autorelease object
     CCMenu* pMenu = CCMenu::create(pCloseItem, NULL);
-    pMenu->setPosition( CCPointZero );
+    pMenu->setPosition(CCPointZero);
     this->addChild(pMenu, 1);
 
     /////////////////////////////
@@ -56,55 +54,28 @@ bool HelloWorld::init()
 
     // add a label shows "Hello World"
     // create and initialize a label
-    CCLabelTTF* pLabel = CCLabelTTF::create("Hello World", "Thonburi", 34);
-
-    // ask director the window size
-    CCSize size = CCDirector::sharedDirector()->getWinSize();
-
+    
+    CCLabelTTF* pLabel = CCLabelTTF::create("Hello World", "Arial", 24);
+    
     // position the label on the center of the screen
-    pLabel->setPosition( ccp(size.width / 2, size.height - 20) );
+    pLabel->setPosition(ccp(origin.x + visibleSize.width/2,
+                            origin.y + visibleSize.height - pLabel->getContentSize().height));
 
     // add the label as a child to this layer
     this->addChild(pLabel, 1);
 
     // add "HelloWorld" splash screen"
-    CCSprite* pSprite = CCSprite::create("map.png");
+    CCSprite* pSprite = CCSprite::create("HelloWorld.png");
 
     // position the sprite on the center of the screen
-    pSprite->setPosition( ccp(size.width/2, size.height/2) );
+    pSprite->setPosition(ccp(visibleSize.width/2 + origin.x, visibleSize.height/2 + origin.y));
 
     // add the sprite as a child to this layer
     this->addChild(pSprite, 0);
     
-    char namelist[] = "testNotification";
-//    char *name = &namelist[0];
-    string str = "testNotification";
-    char *strp = &str[0];
-    cout << strp << endl;
-    string str1 = strp;
-    cout << str1;
-//    cout << maps["testNotification"] <<endl;
-//    CCNotificationCenter * notiCenter = CCNotificationCenter::sharedNotificationCenter();
-//    notiCenter->addObserver(this, callfuncO_selector(HelloWorld::callBackHandler), name, NULL);
-//    notiCenter->postNotification(name);
-    
-//    EventDispatcher* dispatcher = new EventDispatcher();
-//    dispatcher->addEventListener(name, callfuncO_selector(HelloWorld::callBackHandler));
-//    dispatcher->dispatchEvent(name, NULL);
     return true;
 }
 
-void HelloWorld::callBackHandler(CCObject *obj)
-{
-    std::cout << "testsuccess" << std::endl;
-}
-
-void HelloWorld::draw()
-{
-    CHECK_GL_ERROR_DEBUG();
-    
-    
-}
 
 void HelloWorld::menuCloseCallback(CCObject* pSender)
 {
