@@ -4,10 +4,11 @@
 #include <string>
 #include <iostream>
 #include "CCDictionary.h"
+#include "View.h"
 
 using namespace std;
 using namespace cocos2d;
-using namespace CocosDenshion;
+
 
 CCScene* HelloWorld::scene()
 {
@@ -75,22 +76,6 @@ bool HelloWorld::init()
 
     // add the sprite as a child to this layer
     this->addChild(pSprite, 0);
-    
-    char namelist[] = "testNotification";
-//    char *name = &namelist[0];
-    string str = "testNotification";
-    char *strp = &str[0];
-    cout << strp << endl;
-    string str1 = strp;
-    cout << str1;
-//    cout << maps["testNotification"] <<endl;
-//    CCNotificationCenter * notiCenter = CCNotificationCenter::sharedNotificationCenter();
-//    notiCenter->addObserver(this, callfuncO_selector(HelloWorld::callBackHandler), name, NULL);
-//    notiCenter->postNotification(name);
-    
-//    EventDispatcher* dispatcher = new EventDispatcher();
-//    dispatcher->addEventListener(name, callfuncO_selector(HelloWorld::callBackHandler));
-//    dispatcher->dispatchEvent(name, NULL);
     return true;
 }
 

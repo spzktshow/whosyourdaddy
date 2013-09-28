@@ -9,6 +9,15 @@
 /* Begin PBXBuildFile section */
 		641142FE17F4792A006A7899 /* ModelData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 641142FC17F4792A006A7899 /* ModelData.cpp */; };
 		6411430117F47E13006A7899 /* Model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 641142FF17F47E13006A7899 /* Model.cpp */; };
+		641FC2C417F5631C00035A47 /* Mediator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 641FC2C217F5631C00035A47 /* Mediator.cpp */; };
+		641FC2C717F5664E00035A47 /* View.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 641FC2C517F5664E00035A47 /* View.cpp */; };
+		641FC2CB17F5723C00035A47 /* GMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 641FC2C917F5723C00035A47 /* GMatrix.cpp */; };
+		641FC2CF17F5734F00035A47 /* GMatrixIndex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 641FC2CD17F5734F00035A47 /* GMatrixIndex.cpp */; };
+		641FC2D317F573FB00035A47 /* MapNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 641FC2D117F573FB00035A47 /* MapNode.cpp */; };
+		641FC2D617F5754100035A47 /* GNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 641FC2D417F5754100035A47 /* GNode.cpp */; };
+		641FC2D917F5791300035A47 /* MapItem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 641FC2D717F5791300035A47 /* MapItem.cpp */; };
+		641FC2E017F57D0E00035A47 /* MapTile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 641FC2DE17F57D0E00035A47 /* MapTile.cpp */; };
+		641FC2E317F57DC300035A47 /* Map.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 641FC2E117F57DC300035A47 /* Map.cpp */; };
 		6425338317F4F843009326A1 /* AbstractObserver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6425338117F4F843009326A1 /* AbstractObserver.cpp */; };
 		643DCA1917F32BAC0056E347 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 643DCA1817F32BAC0056E347 /* QuartzCore.framework */; };
 		643DCA1B17F32BAC0056E347 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 643DCA1A17F32BAC0056E347 /* OpenGLES.framework */; };
@@ -286,7 +295,6 @@
 		643DCDC717F32E0C0056E347 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = 643DCDC617F32E0C0056E347 /* map.png */; };
 		643DCEA317F34A990056E347 /* EventDispatcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 643DCEA117F34A990056E347 /* EventDispatcher.cpp */; };
 		64F0E7A817F51DEF002FB3D9 /* Command.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64F0E7A617F51DEF002FB3D9 /* Command.cpp */; };
-		64F0E7AF17F520B6002FB3D9 /* Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64F0E7AD17F520B6002FB3D9 /* Controller.cpp */; };
 		64FF384217F3A80600ABAB9D /* GroupItem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64FF384017F3A80600ABAB9D /* GroupItem.cpp */; };
 		64FF384517F3A81100ABAB9D /* Group.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64FF384317F3A81100ABAB9D /* Group.cpp */; };
 /* End PBXBuildFile section */
@@ -296,6 +304,24 @@
 		641142FD17F4792A006A7899 /* ModelData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelData.h; sourceTree = "<group>"; };
 		641142FF17F47E13006A7899 /* Model.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Model.cpp; sourceTree = "<group>"; };
 		6411430017F47E13006A7899 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		641FC2C217F5631C00035A47 /* Mediator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Mediator.cpp; sourceTree = "<group>"; };
+		641FC2C317F5631C00035A47 /* Mediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mediator.h; sourceTree = "<group>"; };
+		641FC2C517F5664E00035A47 /* View.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = View.cpp; sourceTree = "<group>"; };
+		641FC2C617F5664E00035A47 /* View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = View.h; sourceTree = "<group>"; };
+		641FC2C917F5723C00035A47 /* GMatrix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GMatrix.cpp; sourceTree = "<group>"; };
+		641FC2CA17F5723C00035A47 /* GMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMatrix.h; sourceTree = "<group>"; };
+		641FC2CD17F5734F00035A47 /* GMatrixIndex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GMatrixIndex.cpp; sourceTree = "<group>"; };
+		641FC2CE17F5734F00035A47 /* GMatrixIndex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMatrixIndex.h; sourceTree = "<group>"; };
+		641FC2D117F573FB00035A47 /* MapNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MapNode.cpp; sourceTree = "<group>"; };
+		641FC2D217F573FB00035A47 /* MapNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapNode.h; sourceTree = "<group>"; };
+		641FC2D417F5754100035A47 /* GNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GNode.cpp; sourceTree = "<group>"; };
+		641FC2D517F5754100035A47 /* GNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNode.h; sourceTree = "<group>"; };
+		641FC2D717F5791300035A47 /* MapItem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MapItem.cpp; sourceTree = "<group>"; };
+		641FC2D817F5791300035A47 /* MapItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapItem.h; sourceTree = "<group>"; };
+		641FC2DE17F57D0E00035A47 /* MapTile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MapTile.cpp; sourceTree = "<group>"; };
+		641FC2DF17F57D0E00035A47 /* MapTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapTile.h; sourceTree = "<group>"; };
+		641FC2E117F57DC300035A47 /* Map.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Map.cpp; sourceTree = "<group>"; };
+		641FC2E217F57DC300035A47 /* Map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Map.h; sourceTree = "<group>"; };
 		6425338117F4F843009326A1 /* AbstractObserver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AbstractObserver.cpp; sourceTree = "<group>"; };
 		6425338217F4F843009326A1 /* AbstractObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractObserver.h; sourceTree = "<group>"; };
 		643DCA1517F32BAC0056E347 /* MapPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -893,8 +919,6 @@
 		643DCEA217F34A990056E347 /* EventDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventDispatcher.h; sourceTree = "<group>"; };
 		64F0E7A617F51DEF002FB3D9 /* Command.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Command.cpp; sourceTree = "<group>"; };
 		64F0E7A717F51DEF002FB3D9 /* Command.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Command.h; sourceTree = "<group>"; };
-		64F0E7AD17F520B6002FB3D9 /* Controller.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Controller.cpp; sourceTree = "<group>"; };
-		64F0E7AE17F520B6002FB3D9 /* Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Controller.h; sourceTree = "<group>"; };
 		64FF384017F3A80600ABAB9D /* GroupItem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GroupItem.cpp; sourceTree = "<group>"; };
 		64FF384117F3A80600ABAB9D /* GroupItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupItem.h; sourceTree = "<group>"; };
 		64FF384317F3A81100ABAB9D /* Group.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Group.cpp; sourceTree = "<group>"; };
@@ -926,6 +950,7 @@
 		641142F917F4728A006A7899 /* mvc */ = {
 			isa = PBXGroup;
 			children = (
+				641FC2C117F5630B00035A47 /* view */,
 				641142FB17F478A2006A7899 /* controller */,
 				641142FA17F4789C006A7899 /* model */,
 			);
@@ -948,10 +973,48 @@
 			children = (
 				64F0E7A617F51DEF002FB3D9 /* Command.cpp */,
 				64F0E7A717F51DEF002FB3D9 /* Command.h */,
-				64F0E7AD17F520B6002FB3D9 /* Controller.cpp */,
-				64F0E7AE17F520B6002FB3D9 /* Controller.h */,
 			);
 			name = controller;
+			sourceTree = "<group>";
+		};
+		641FC2C117F5630B00035A47 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				641FC2C217F5631C00035A47 /* Mediator.cpp */,
+				641FC2C317F5631C00035A47 /* Mediator.h */,
+				641FC2C517F5664E00035A47 /* View.cpp */,
+				641FC2C617F5664E00035A47 /* View.h */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		641FC2C817F5723200035A47 /* map */ = {
+			isa = PBXGroup;
+			children = (
+				641FC2D117F573FB00035A47 /* MapNode.cpp */,
+				641FC2D217F573FB00035A47 /* MapNode.h */,
+				641FC2D717F5791300035A47 /* MapItem.cpp */,
+				641FC2D817F5791300035A47 /* MapItem.h */,
+				641FC2DE17F57D0E00035A47 /* MapTile.cpp */,
+				641FC2DF17F57D0E00035A47 /* MapTile.h */,
+				641FC2E117F57DC300035A47 /* Map.cpp */,
+				641FC2E217F57DC300035A47 /* Map.h */,
+				641FC2CC17F5733300035A47 /* G */,
+			);
+			name = map;
+			sourceTree = "<group>";
+		};
+		641FC2CC17F5733300035A47 /* G */ = {
+			isa = PBXGroup;
+			children = (
+				641FC2C917F5723C00035A47 /* GMatrix.cpp */,
+				641FC2CA17F5723C00035A47 /* GMatrix.h */,
+				641FC2CD17F5734F00035A47 /* GMatrixIndex.cpp */,
+				641FC2CE17F5734F00035A47 /* GMatrixIndex.h */,
+				641FC2D417F5754100035A47 /* GNode.cpp */,
+				641FC2D517F5754100035A47 /* GNode.h */,
+			);
+			name = G;
 			sourceTree = "<group>";
 		};
 		6425338017F4F7DC009326A1 /* observer */ = {
@@ -2189,6 +2252,7 @@
 		643DCE9C17F340290056E347 /* core */ = {
 			isa = PBXGroup;
 			children = (
+				641FC2C817F5723200035A47 /* map */,
 				6425338017F4F7DC009326A1 /* observer */,
 				641142F917F4728A006A7899 /* mvc */,
 				64FF383F17F3A7D600ABAB9D /* group */,
@@ -2547,7 +2611,15 @@
 				6411430117F47E13006A7899 /* Model.cpp in Sources */,
 				6425338317F4F843009326A1 /* AbstractObserver.cpp in Sources */,
 				64F0E7A817F51DEF002FB3D9 /* Command.cpp in Sources */,
-				64F0E7AF17F520B6002FB3D9 /* Controller.cpp in Sources */,
+				641FC2C417F5631C00035A47 /* Mediator.cpp in Sources */,
+				641FC2C717F5664E00035A47 /* View.cpp in Sources */,
+				641FC2CB17F5723C00035A47 /* GMatrix.cpp in Sources */,
+				641FC2CF17F5734F00035A47 /* GMatrixIndex.cpp in Sources */,
+				641FC2D317F573FB00035A47 /* MapNode.cpp in Sources */,
+				641FC2D617F5754100035A47 /* GNode.cpp in Sources */,
+				641FC2D917F5791300035A47 /* MapItem.cpp in Sources */,
+				641FC2E017F57D0E00035A47 /* MapTile.cpp in Sources */,
+				641FC2E317F57DC300035A47 /* Map.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
