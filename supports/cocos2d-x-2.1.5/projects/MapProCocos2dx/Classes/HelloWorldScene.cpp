@@ -1,6 +1,5 @@
 #include "HelloWorldScene.h"
-
-USING_NS_CC;
+#include "Map.h"
 
 CCScene* HelloWorld::scene()
 {
@@ -72,7 +71,9 @@ bool HelloWorld::init()
 
     // add the sprite as a child to this layer
     this->addChild(pSprite, 0);
-    
+	CCRect * rect = new CCRect();
+	GNode* gNode = new GNode(50, 50, 1, 1);
+	Map* map = new Map(rect, gNode);
     return true;
 }
 

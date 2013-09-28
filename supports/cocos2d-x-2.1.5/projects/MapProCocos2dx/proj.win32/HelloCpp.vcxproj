@@ -128,12 +128,46 @@ xcopy /Y /Q "$(ProjectDir)..\..\..\external\libwebsockets\win32\lib\*.*" "$(OutD
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\Classes\AppDelegate.cpp" />
+    <ClCompile Include="..\Classes\Command.cpp" />
+    <ClCompile Include="..\Classes\EventDispatcher.cpp" />
+    <ClCompile Include="..\Classes\GMatrix.cpp" />
+    <ClCompile Include="..\Classes\GMatrixIndex.cpp" />
+    <ClCompile Include="..\Classes\GNode.cpp" />
+    <ClCompile Include="..\Classes\Group.cpp" />
+    <ClCompile Include="..\Classes\GroupItem.cpp" />
     <ClCompile Include="..\Classes\HelloWorldScene.cpp" />
+    <ClCompile Include="..\Classes\Map.cpp" />
+    <ClCompile Include="..\Classes\MapItem.cpp" />
+    <ClCompile Include="..\Classes\MapModel.cpp" />
+    <ClCompile Include="..\Classes\MapNode.cpp" />
+    <ClCompile Include="..\Classes\MapScene.cpp" />
+    <ClCompile Include="..\Classes\MapTile.cpp" />
+    <ClCompile Include="..\Classes\Mediator.cpp" />
+    <ClCompile Include="..\Classes\Model.cpp" />
+    <ClCompile Include="..\Classes\ModelData.cpp" />
+    <ClCompile Include="..\Classes\View.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Classes\AppDelegate.h" />
+    <ClInclude Include="..\Classes\Command.h" />
+    <ClInclude Include="..\Classes\EventDispatcher.h" />
+    <ClInclude Include="..\Classes\GMatrix.h" />
+    <ClInclude Include="..\Classes\GMatrixIndex.h" />
+    <ClInclude Include="..\Classes\GNode.h" />
+    <ClInclude Include="..\Classes\Group.h" />
+    <ClInclude Include="..\Classes\GroupItem.h" />
     <ClInclude Include="..\Classes\HelloWorldScene.h" />
+    <ClInclude Include="..\Classes\Map.h" />
+    <ClInclude Include="..\Classes\MapItem.h" />
+    <ClInclude Include="..\Classes\MapModel.h" />
+    <ClInclude Include="..\Classes\MapNode.h" />
+    <ClInclude Include="..\Classes\MapScene.h" />
+    <ClInclude Include="..\Classes\MapTile.h" />
+    <ClInclude Include="..\Classes\Mediator.h" />
+    <ClInclude Include="..\Classes\Model.h" />
+    <ClInclude Include="..\Classes\ModelData.h" />
+    <ClInclude Include="..\Classes\View.h" />
     <ClInclude Include="main.h" />
   </ItemGroup>
   <ItemGroup>

@@ -7,6 +7,42 @@
     <Filter Include="Classes">
       <UniqueIdentifier>{bb6c862e-70e9-49d9-81b7-3829a6f50471}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Classes\core">
+      <UniqueIdentifier>{54c4a66f-ff27-4fe3-bb24-8c93a3ce250d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\core\geo">
+      <UniqueIdentifier>{11e77028-1243-4d9d-933d-a372a04cc42b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\core\group">
+      <UniqueIdentifier>{db641851-4bc8-404b-bf17-3376a02cb713}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\core\eventDispatcher">
+      <UniqueIdentifier>{cf30f830-5e59-4480-becb-e81eee52959c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\core\mvc">
+      <UniqueIdentifier>{85ab2aa3-ba45-4c67-b471-765087e93528}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\core\mvc\command">
+      <UniqueIdentifier>{7d624118-3380-4007-be55-c697d6be5ecb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\core\mvc\model">
+      <UniqueIdentifier>{8f04e902-f36d-4dbc-94e7-d42d19182c45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\core\mvc\view">
+      <UniqueIdentifier>{41dc1be9-f0a0-43d1-8cdc-384aaf7794dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\core\map">
+      <UniqueIdentifier>{484ee253-f5b8-455c-9fdd-0ca570f4750d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\model">
+      <UniqueIdentifier>{07eb97e7-6bc7-4618-ac86-a5b09fd2959e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\view">
+      <UniqueIdentifier>{c1d90507-202b-49b9-aecf-463c436f747a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\view\map">
+      <UniqueIdentifier>{a3e4815f-316d-4b2d-9193-adf987cbabc1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -18,6 +54,57 @@
     <ClCompile Include="..\Classes\HelloWorldScene.cpp">
       <Filter>Classes</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\GMatrix.cpp">
+      <Filter>Classes\core\geo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GMatrixIndex.cpp">
+      <Filter>Classes\core\geo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GNode.cpp">
+      <Filter>Classes\core\geo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Group.cpp">
+      <Filter>Classes\core\group</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GroupItem.cpp">
+      <Filter>Classes\core\group</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\EventDispatcher.cpp">
+      <Filter>Classes\core\eventDispatcher</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Command.cpp">
+      <Filter>Classes\core\mvc\command</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Model.cpp">
+      <Filter>Classes\core\mvc\model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ModelData.cpp">
+      <Filter>Classes\core\mvc\model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Mediator.cpp">
+      <Filter>Classes\core\mvc\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\View.cpp">
+      <Filter>Classes\core\mvc\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Map.cpp">
+      <Filter>Classes\core\map</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MapItem.cpp">
+      <Filter>Classes\core\map</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MapNode.cpp">
+      <Filter>Classes\core\map</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MapTile.cpp">
+      <Filter>Classes\core\map</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MapModel.cpp">
+      <Filter>Classes\model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MapScene.cpp">
+      <Filter>Classes\view\map</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -28,6 +115,57 @@
     </ClInclude>
     <ClInclude Include="..\Classes\HelloWorldScene.h">
       <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GMatrix.h">
+      <Filter>Classes\core\geo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GMatrixIndex.h">
+      <Filter>Classes\core\geo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GNode.h">
+      <Filter>Classes\core\geo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Group.h">
+      <Filter>Classes\core\group</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GroupItem.h">
+      <Filter>Classes\core\group</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\EventDispatcher.h">
+      <Filter>Classes\core\eventDispatcher</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Command.h">
+      <Filter>Classes\core\mvc\command</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Model.h">
+      <Filter>Classes\core\mvc\model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ModelData.h">
+      <Filter>Classes\core\mvc\model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Mediator.h">
+      <Filter>Classes\core\mvc\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\View.h">
+      <Filter>Classes\core\mvc\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Map.h">
+      <Filter>Classes\core\map</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MapItem.h">
+      <Filter>Classes\core\map</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MapNode.h">
+      <Filter>Classes\core\map</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MapTile.h">
+      <Filter>Classes\core\map</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MapModel.h">
+      <Filter>Classes\model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MapScene.h">
+      <Filter>Classes\view\map</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

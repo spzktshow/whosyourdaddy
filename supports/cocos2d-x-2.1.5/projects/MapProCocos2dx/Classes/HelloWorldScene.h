@@ -2,6 +2,12 @@
 #define __HELLOWORLD_SCENE_H__
 
 #include "cocos2d.h"
+#include "GNode.h"
+#include "Group.h"
+#include "EventDispatcher.h"
+#include "Command.h"
+#include "Model.h"
+#include "ModelData.h"
 
 class HelloWorld : public cocos2d::CCLayer
 {
