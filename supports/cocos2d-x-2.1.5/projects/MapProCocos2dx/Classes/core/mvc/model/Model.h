@@ -11,12 +11,19 @@
 
 #include <iostream>
 #include "Group.h"
+#include "Model.h"
 class Model : public Group
 {
 public:
-    static Model* getInstance();
-	~Model();
-private:
-	static Model* _instance;
+    static Model* getInstance()
+    {
+        if (0 == instance)
+        {
+            instance = new Model();
+        }
+        return instance;
+    }
+protected:
+	static Model* instance;
 };
 #endif /* defined(__MapPro__Model__) */

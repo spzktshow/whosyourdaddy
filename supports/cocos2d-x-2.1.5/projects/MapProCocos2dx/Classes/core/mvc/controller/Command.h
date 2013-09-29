@@ -12,9 +12,11 @@
 #include <iostream>
 #include "cocos2d.h"
 #include "Model.h"
+#include "ModelData.h"
 /**
  业务逻辑命令Command，可以直接持有model层的引用，改变model数据
  */
+using namespace cocos2d;
 class Command
 {
 public:
@@ -24,6 +26,6 @@ public:
     virtual void execute(const char* type, CCObject* data);
 protected:
     /**持有model层的引用，可以从model获取相应的data进行改变*/
-    Model* model;
+    ModelData* getModelData(const char* type);
 };
 #endif /* defined(__MapPro__Command__) */

@@ -204,6 +204,24 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		6418978D17F7C0FD00B9409D /* EventDispatcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6418976817F7C0FD00B9409D /* EventDispatcher.cpp */; };
+		6418978E17F7C0FD00B9409D /* GMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6418976B17F7C0FD00B9409D /* GMatrix.cpp */; };
+		6418978F17F7C0FD00B9409D /* GMatrixIndex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6418976D17F7C0FD00B9409D /* GMatrixIndex.cpp */; };
+		6418979017F7C0FD00B9409D /* GNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6418976F17F7C0FD00B9409D /* GNode.cpp */; };
+		6418979117F7C0FD00B9409D /* Group.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6418977217F7C0FD00B9409D /* Group.cpp */; };
+		6418979217F7C0FD00B9409D /* GroupItem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6418977417F7C0FD00B9409D /* GroupItem.cpp */; };
+		6418979317F7C0FD00B9409D /* Map.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6418977717F7C0FD00B9409D /* Map.cpp */; };
+		6418979417F7C0FD00B9409D /* MapItem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6418977917F7C0FD00B9409D /* MapItem.cpp */; };
+		6418979517F7C0FD00B9409D /* MapNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6418977B17F7C0FD00B9409D /* MapNode.cpp */; };
+		6418979617F7C0FD00B9409D /* MapTile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6418977D17F7C0FD00B9409D /* MapTile.cpp */; };
+		6418979717F7C0FD00B9409D /* Command.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6418978117F7C0FD00B9409D /* Command.cpp */; };
+		6418979817F7C0FD00B9409D /* Model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6418978417F7C0FD00B9409D /* Model.cpp */; };
+		6418979917F7C0FD00B9409D /* ModelData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6418978617F7C0FD00B9409D /* ModelData.cpp */; };
+		6418979A17F7C0FD00B9409D /* Mediator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6418978917F7C0FD00B9409D /* Mediator.cpp */; };
+		6418979B17F7C0FD00B9409D /* View.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6418978B17F7C0FD00B9409D /* View.cpp */; };
+		641897A017F7C11500B9409D /* MapCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6418979E17F7C11500B9409D /* MapCommand.cpp */; };
+		641897A817F7C12400B9409D /* MapModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 641897A317F7C12400B9409D /* MapModel.cpp */; };
+		641897A917F7C12400B9409D /* MapScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 641897A617F7C12400B9409D /* MapScene.cpp */; };
 		7855E0E1153FEF240059DD9A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7855E0DF153FEF240059DD9A /* Default.png */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712461292920000B8313A /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB212928DE900B8313A /* libxml2.dylib */; };
@@ -641,6 +659,42 @@
 		1D6058910D05DD3D006BFB54 /* MapProCocos2dx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapProCocos2dx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6418976817F7C0FD00B9409D /* EventDispatcher.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EventDispatcher.cpp; sourceTree = "<group>"; };
+		6418976917F7C0FD00B9409D /* EventDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventDispatcher.h; sourceTree = "<group>"; };
+		6418976B17F7C0FD00B9409D /* GMatrix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GMatrix.cpp; sourceTree = "<group>"; };
+		6418976C17F7C0FD00B9409D /* GMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMatrix.h; sourceTree = "<group>"; };
+		6418976D17F7C0FD00B9409D /* GMatrixIndex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GMatrixIndex.cpp; sourceTree = "<group>"; };
+		6418976E17F7C0FD00B9409D /* GMatrixIndex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMatrixIndex.h; sourceTree = "<group>"; };
+		6418976F17F7C0FD00B9409D /* GNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GNode.cpp; sourceTree = "<group>"; };
+		6418977017F7C0FD00B9409D /* GNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNode.h; sourceTree = "<group>"; };
+		6418977217F7C0FD00B9409D /* Group.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Group.cpp; sourceTree = "<group>"; };
+		6418977317F7C0FD00B9409D /* Group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Group.h; sourceTree = "<group>"; };
+		6418977417F7C0FD00B9409D /* GroupItem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GroupItem.cpp; sourceTree = "<group>"; };
+		6418977517F7C0FD00B9409D /* GroupItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupItem.h; sourceTree = "<group>"; };
+		6418977717F7C0FD00B9409D /* Map.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Map.cpp; sourceTree = "<group>"; };
+		6418977817F7C0FD00B9409D /* Map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Map.h; sourceTree = "<group>"; };
+		6418977917F7C0FD00B9409D /* MapItem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MapItem.cpp; sourceTree = "<group>"; };
+		6418977A17F7C0FD00B9409D /* MapItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapItem.h; sourceTree = "<group>"; };
+		6418977B17F7C0FD00B9409D /* MapNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MapNode.cpp; sourceTree = "<group>"; };
+		6418977C17F7C0FD00B9409D /* MapNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapNode.h; sourceTree = "<group>"; };
+		6418977D17F7C0FD00B9409D /* MapTile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MapTile.cpp; sourceTree = "<group>"; };
+		6418977E17F7C0FD00B9409D /* MapTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapTile.h; sourceTree = "<group>"; };
+		6418978117F7C0FD00B9409D /* Command.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Command.cpp; sourceTree = "<group>"; };
+		6418978217F7C0FD00B9409D /* Command.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Command.h; sourceTree = "<group>"; };
+		6418978417F7C0FD00B9409D /* Model.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Model.cpp; sourceTree = "<group>"; };
+		6418978517F7C0FD00B9409D /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		6418978617F7C0FD00B9409D /* ModelData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ModelData.cpp; sourceTree = "<group>"; };
+		6418978717F7C0FD00B9409D /* ModelData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelData.h; sourceTree = "<group>"; };
+		6418978917F7C0FD00B9409D /* Mediator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Mediator.cpp; sourceTree = "<group>"; };
+		6418978A17F7C0FD00B9409D /* Mediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mediator.h; sourceTree = "<group>"; };
+		6418978B17F7C0FD00B9409D /* View.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = View.cpp; sourceTree = "<group>"; };
+		6418978C17F7C0FD00B9409D /* View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = View.h; sourceTree = "<group>"; };
+		6418979E17F7C11500B9409D /* MapCommand.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MapCommand.cpp; sourceTree = "<group>"; };
+		6418979F17F7C11500B9409D /* MapCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapCommand.h; sourceTree = "<group>"; };
+		641897A317F7C12400B9409D /* MapModel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MapModel.cpp; sourceTree = "<group>"; };
+		641897A417F7C12400B9409D /* MapModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapModel.h; sourceTree = "<group>"; };
+		641897A617F7C12400B9409D /* MapScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MapScene.cpp; sourceTree = "<group>"; };
+		641897A717F7C12400B9409D /* MapScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapScene.h; sourceTree = "<group>"; };
 		7855E0DF153FEF240059DD9A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = SOURCE_ROOT; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB212928DE900B8313A /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
@@ -1175,6 +1229,10 @@
 		15AA9C4015B7EC450033D6C2 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				641897A117F7C12400B9409D /* model */,
+				641897A517F7C12400B9409D /* view */,
+				6418979C17F7C11500B9409D /* controller */,
+				6418976617F7C0FD00B9409D /* core */,
 				1AFAF8B316D35DE700DB1158 /* AppDelegate.cpp */,
 				1AFAF8B416D35DE700DB1158 /* AppDelegate.h */,
 				1AFAF8B516D35DE700DB1158 /* HelloWorldScene.cpp */,
@@ -1473,6 +1531,154 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6418976617F7C0FD00B9409D /* core */ = {
+			isa = PBXGroup;
+			children = (
+				6418976717F7C0FD00B9409D /* event */,
+				6418976A17F7C0FD00B9409D /* geo */,
+				6418977117F7C0FD00B9409D /* group */,
+				6418977617F7C0FD00B9409D /* map */,
+				6418977F17F7C0FD00B9409D /* mvc */,
+			);
+			name = core;
+			path = ../Classes/core;
+			sourceTree = "<group>";
+		};
+		6418976717F7C0FD00B9409D /* event */ = {
+			isa = PBXGroup;
+			children = (
+				6418976817F7C0FD00B9409D /* EventDispatcher.cpp */,
+				6418976917F7C0FD00B9409D /* EventDispatcher.h */,
+			);
+			path = event;
+			sourceTree = "<group>";
+		};
+		6418976A17F7C0FD00B9409D /* geo */ = {
+			isa = PBXGroup;
+			children = (
+				6418976B17F7C0FD00B9409D /* GMatrix.cpp */,
+				6418976C17F7C0FD00B9409D /* GMatrix.h */,
+				6418976D17F7C0FD00B9409D /* GMatrixIndex.cpp */,
+				6418976E17F7C0FD00B9409D /* GMatrixIndex.h */,
+				6418976F17F7C0FD00B9409D /* GNode.cpp */,
+				6418977017F7C0FD00B9409D /* GNode.h */,
+			);
+			path = geo;
+			sourceTree = "<group>";
+		};
+		6418977117F7C0FD00B9409D /* group */ = {
+			isa = PBXGroup;
+			children = (
+				6418977217F7C0FD00B9409D /* Group.cpp */,
+				6418977317F7C0FD00B9409D /* Group.h */,
+				6418977417F7C0FD00B9409D /* GroupItem.cpp */,
+				6418977517F7C0FD00B9409D /* GroupItem.h */,
+			);
+			path = group;
+			sourceTree = "<group>";
+		};
+		6418977617F7C0FD00B9409D /* map */ = {
+			isa = PBXGroup;
+			children = (
+				6418977717F7C0FD00B9409D /* Map.cpp */,
+				6418977817F7C0FD00B9409D /* Map.h */,
+				6418977917F7C0FD00B9409D /* MapItem.cpp */,
+				6418977A17F7C0FD00B9409D /* MapItem.h */,
+				6418977B17F7C0FD00B9409D /* MapNode.cpp */,
+				6418977C17F7C0FD00B9409D /* MapNode.h */,
+				6418977D17F7C0FD00B9409D /* MapTile.cpp */,
+				6418977E17F7C0FD00B9409D /* MapTile.h */,
+			);
+			path = map;
+			sourceTree = "<group>";
+		};
+		6418977F17F7C0FD00B9409D /* mvc */ = {
+			isa = PBXGroup;
+			children = (
+				6418978017F7C0FD00B9409D /* controller */,
+				6418978317F7C0FD00B9409D /* model */,
+				6418978817F7C0FD00B9409D /* view */,
+			);
+			path = mvc;
+			sourceTree = "<group>";
+		};
+		6418978017F7C0FD00B9409D /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				6418978117F7C0FD00B9409D /* Command.cpp */,
+				6418978217F7C0FD00B9409D /* Command.h */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		6418978317F7C0FD00B9409D /* model */ = {
+			isa = PBXGroup;
+			children = (
+				6418978417F7C0FD00B9409D /* Model.cpp */,
+				6418978517F7C0FD00B9409D /* Model.h */,
+				6418978617F7C0FD00B9409D /* ModelData.cpp */,
+				6418978717F7C0FD00B9409D /* ModelData.h */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		6418978817F7C0FD00B9409D /* view */ = {
+			isa = PBXGroup;
+			children = (
+				6418978917F7C0FD00B9409D /* Mediator.cpp */,
+				6418978A17F7C0FD00B9409D /* Mediator.h */,
+				6418978B17F7C0FD00B9409D /* View.cpp */,
+				6418978C17F7C0FD00B9409D /* View.h */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		6418979C17F7C11500B9409D /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				6418979D17F7C11500B9409D /* map */,
+			);
+			name = controller;
+			path = ../Classes/controller;
+			sourceTree = "<group>";
+		};
+		6418979D17F7C11500B9409D /* map */ = {
+			isa = PBXGroup;
+			children = (
+				6418979E17F7C11500B9409D /* MapCommand.cpp */,
+				6418979F17F7C11500B9409D /* MapCommand.h */,
+			);
+			path = map;
+			sourceTree = "<group>";
+		};
+		641897A117F7C12400B9409D /* model */ = {
+			isa = PBXGroup;
+			children = (
+				641897A217F7C12400B9409D /* map */,
+			);
+			name = model;
+			path = ../Classes/model;
+			sourceTree = "<group>";
+		};
+		641897A217F7C12400B9409D /* map */ = {
+			isa = PBXGroup;
+			children = (
+				641897A317F7C12400B9409D /* MapModel.cpp */,
+				641897A417F7C12400B9409D /* MapModel.h */,
+			);
+			path = map;
+			sourceTree = "<group>";
+		};
+		641897A517F7C12400B9409D /* view */ = {
+			isa = PBXGroup;
+			children = (
+				641897A617F7C12400B9409D /* MapScene.cpp */,
+				641897A717F7C12400B9409D /* MapScene.h */,
+			);
+			name = view;
+			path = ../Classes/view;
+			sourceTree = "<group>";
+		};
 		78C7DDAA14EBA5050085D0C2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -1768,6 +1974,24 @@
 				1A9CE8981765A12C000E3062 /* CCComAudio.cpp in Sources */,
 				1A9CE8991765A12C000E3062 /* CCComController.cpp in Sources */,
 				1A9CE89A1765A12C000E3062 /* CCInputDelegate.cpp in Sources */,
+				6418978D17F7C0FD00B9409D /* EventDispatcher.cpp in Sources */,
+				6418978E17F7C0FD00B9409D /* GMatrix.cpp in Sources */,
+				6418978F17F7C0FD00B9409D /* GMatrixIndex.cpp in Sources */,
+				6418979017F7C0FD00B9409D /* GNode.cpp in Sources */,
+				6418979117F7C0FD00B9409D /* Group.cpp in Sources */,
+				6418979217F7C0FD00B9409D /* GroupItem.cpp in Sources */,
+				6418979317F7C0FD00B9409D /* Map.cpp in Sources */,
+				6418979417F7C0FD00B9409D /* MapItem.cpp in Sources */,
+				6418979517F7C0FD00B9409D /* MapNode.cpp in Sources */,
+				6418979617F7C0FD00B9409D /* MapTile.cpp in Sources */,
+				6418979717F7C0FD00B9409D /* Command.cpp in Sources */,
+				6418979817F7C0FD00B9409D /* Model.cpp in Sources */,
+				6418979917F7C0FD00B9409D /* ModelData.cpp in Sources */,
+				6418979A17F7C0FD00B9409D /* Mediator.cpp in Sources */,
+				6418979B17F7C0FD00B9409D /* View.cpp in Sources */,
+				641897A017F7C11500B9409D /* MapCommand.cpp in Sources */,
+				641897A817F7C12400B9409D /* MapModel.cpp in Sources */,
+				641897A917F7C12400B9409D /* MapScene.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
