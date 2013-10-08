@@ -222,6 +222,7 @@
 		641897A017F7C11500B9409D /* MapCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6418979E17F7C11500B9409D /* MapCommand.cpp */; };
 		641897A817F7C12400B9409D /* MapModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 641897A317F7C12400B9409D /* MapModel.cpp */; };
 		641897A917F7C12400B9409D /* MapScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 641897A617F7C12400B9409D /* MapScene.cpp */; };
+		646BDFC817F8625200751E9F /* Model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 646BDFC617F8625200751E9F /* Model.cpp */; };
 		7855E0E1153FEF240059DD9A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7855E0DF153FEF240059DD9A /* Default.png */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712461292920000B8313A /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB212928DE900B8313A /* libxml2.dylib */; };
@@ -695,6 +696,8 @@
 		641897A417F7C12400B9409D /* MapModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapModel.h; sourceTree = "<group>"; };
 		641897A617F7C12400B9409D /* MapScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MapScene.cpp; sourceTree = "<group>"; };
 		641897A717F7C12400B9409D /* MapScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapScene.h; sourceTree = "<group>"; };
+		646BDFC617F8625200751E9F /* Model.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Model.cpp; path = ../Classes/Model.cpp; sourceTree = "<group>"; };
+		646BDFC717F8625200751E9F /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Model.h; path = ../Classes/Model.h; sourceTree = "<group>"; };
 		7855E0DF153FEF240059DD9A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = SOURCE_ROOT; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB212928DE900B8313A /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
@@ -1229,13 +1232,14 @@
 		15AA9C4015B7EC450033D6C2 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				646BDFC417F8622C00751E9F /* mvc */,
 				641897A117F7C12400B9409D /* model */,
 				641897A517F7C12400B9409D /* view */,
 				6418979C17F7C11500B9409D /* controller */,
 				6418976617F7C0FD00B9409D /* core */,
 				1AFAF8B316D35DE700DB1158 /* AppDelegate.cpp */,
-				1AFAF8B416D35DE700DB1158 /* AppDelegate.h */,
 				1AFAF8B516D35DE700DB1158 /* HelloWorldScene.cpp */,
+				1AFAF8B416D35DE700DB1158 /* AppDelegate.h */,
 				1AFAF8B616D35DE700DB1158 /* HelloWorldScene.h */,
 			);
 			name = Classes;
@@ -1679,6 +1683,15 @@
 			path = ../Classes/view;
 			sourceTree = "<group>";
 		};
+		646BDFC417F8622C00751E9F /* mvc */ = {
+			isa = PBXGroup;
+			children = (
+				646BDFC617F8625200751E9F /* Model.cpp */,
+				646BDFC717F8625200751E9F /* Model.h */,
+			);
+			name = mvc;
+			sourceTree = "<group>";
+		};
 		78C7DDAA14EBA5050085D0C2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -1992,6 +2005,7 @@
 				641897A017F7C11500B9409D /* MapCommand.cpp in Sources */,
 				641897A817F7C12400B9409D /* MapModel.cpp in Sources */,
 				641897A917F7C12400B9409D /* MapScene.cpp in Sources */,
+				646BDFC817F8625200751E9F /* Model.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
