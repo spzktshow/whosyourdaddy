@@ -164,10 +164,10 @@ MapNode* MapUtils::searchPath(int startRowIndex, int startColIndex, int endRowIn
 	{
 		/***遍历点的四周****/
 		int colIndex, rowIndex, col, row, i, j;
-		row = min(searchNode->nodeData->matrixIndex->rowIndex + 2, map->nodeData->matrix->row);
-		col = min(searchNode->nodeData->matrixIndex->colIndex + 2, map->nodeData->matrix->col);
-		rowIndex = max(searchNode->nodeData->matrixIndex->rowIndex - 1, 0);
-		colIndex = max(searchNode->nodeData->matrixIndex->colIndex - 1, 0);
+		row = std::min(searchNode->nodeData->matrixIndex->rowIndex + 2, map->nodeData->matrix->row);
+		col = std::min(searchNode->nodeData->matrixIndex->colIndex + 2, map->nodeData->matrix->col);
+		rowIndex = std::max(searchNode->nodeData->matrixIndex->rowIndex - 1, 0);
+		colIndex = std::max(searchNode->nodeData->matrixIndex->colIndex - 1, 0);
 		for (i = rowIndex; i < row; i ++)
 		{
 

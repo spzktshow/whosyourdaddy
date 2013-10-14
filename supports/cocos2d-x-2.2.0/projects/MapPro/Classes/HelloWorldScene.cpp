@@ -66,7 +66,7 @@ bool HelloWorld::init()
     this->addChild(pLabel, 1);
 
     // add "HelloWorld" splash screen"
-    CCSprite* pSprite = CCSprite::create("HelloWorld.png");
+    //CCSprite* pSprite = CCSprite::create("HelloWorld.png");
 
     // position the sprite on the center of the screen
    // pSprite->setPosition(ccp(visibleSize.width/2 + origin.x, visibleSize.height/2 + origin.y));
@@ -74,9 +74,9 @@ bool HelloWorld::init()
     // add the sprite as a child to this layer
     //this->addChild(pSprite, 0);
 
-	MSNode* msNode = new MSNode(10, 10, 0, 0);
-	Map* map = new Map(msNode);
-	MapNode* searchNode = MapUtils::searchPath(0, 0, 9, 9, map);
+	//MSNode* msNode = new MSNode(10, 10, 0, 0);
+	//Map* map = new Map(msNode);
+	//MapNode* searchNode = MapUtils::searchPath(0, 0, 9, 9, map);
     return true;
 }
 
