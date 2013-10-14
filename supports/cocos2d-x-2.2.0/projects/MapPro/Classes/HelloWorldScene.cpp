@@ -1,6 +1,7 @@
 #include "HelloWorldScene.h"
 
 USING_NS_CC;
+USING_NS_MS;
 
 CCScene* HelloWorld::scene()
 {
@@ -68,11 +69,14 @@ bool HelloWorld::init()
     CCSprite* pSprite = CCSprite::create("HelloWorld.png");
 
     // position the sprite on the center of the screen
-    pSprite->setPosition(ccp(visibleSize.width/2 + origin.x, visibleSize.height/2 + origin.y));
+   // pSprite->setPosition(ccp(visibleSize.width/2 + origin.x, visibleSize.height/2 + origin.y));
 
     // add the sprite as a child to this layer
-    this->addChild(pSprite, 0);
-    
+    //this->addChild(pSprite, 0);
+
+	MSNode* msNode = new MSNode(10, 10, 0, 0);
+	Map* map = new Map(msNode);
+	MapNode* searchNode = MapUtils::searchPath(0, 0, 9, 9, map);
     return true;
 }
 

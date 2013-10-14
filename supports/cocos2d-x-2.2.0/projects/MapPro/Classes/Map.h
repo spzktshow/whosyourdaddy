@@ -10,9 +10,8 @@
 #define __HelloCpp__Map__
 
 #include <cocos2d.h>
-#include "MoonSugar.h"
+
 USING_NS_CC;
-USING_NS_MS;
 
 class MapNodeLayer : public CCLayer
 {

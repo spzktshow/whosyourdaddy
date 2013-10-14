@@ -13,8 +13,6 @@ Map::Map()
     mapScene = CCScene::create();
     
     //
-    nodesLayer = CCLayer::create();
-    mapScene->addChild(nodesLayer);
 }
 
 Map::~Map()
