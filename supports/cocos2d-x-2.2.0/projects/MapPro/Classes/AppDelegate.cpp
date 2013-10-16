@@ -1,7 +1,10 @@
 #include "AppDelegate.h"
 #include "HelloWorldScene.h"
+#include "MapView.h"
+#include "MSMvc.h"
 
 USING_NS_CC;
+USING_NS_MS;
 
 AppDelegate::AppDelegate() {
 
@@ -25,10 +28,18 @@ bool AppDelegate::applicationDidFinishLaunching() {
     pDirector->setAnimationInterval(1.0 / 60);
 
     // create a scene. it's an autorelease object
-    CCScene *pScene = HelloWorld::scene();
+	MSModel* model = MSModel::getInstance();
+	//
+	/*****在程序生命周期内持续存在,直到从model中remove时才delete***/
+	MapModel* mapModel = new MapModel();
 
+	MapScene* scene = MapScene::create();
+	MapTileLayer* mapTileLayer = MapTileLayer::create();
+	scene->addChild(mapTileLayer);
+
+	mapTileLayer->setMapData(mapModel->map);
     // run
-    pDirector->runWithScene(pScene);
+    pDirector->runWithScene(scene);
 
     return true;
 }

@@ -41,6 +41,37 @@ public:
     virtual ~MSNode();
 };
 
+/******************Matrix3d**********/
+class MSMatrix3D : MSMatrix
+{
+public:
+	MSMatrix3D(int x, int y, int z);
+	MSMatrix3D(int col, int row);//y = 0;
+	int x;//col
+	int y;//
+	int z;//row
+};
+
+/*******************MatrixIndex3d*************/
+class MSMatrixIndex3D : MSMatrixIndex
+{
+public:
+	MSMatrixIndex3D(int xIndex, int yIndex, int zIndex);
+	MSMatrixIndex3D(int colIndex, int rowIndex);//y = 0;
+	int xIndex;//colIndex
+	int yIndex;//
+	int zIndex;//rowIndex
+};
+
+/*******************Point3D*************/
+class MSPoint3D
+{
+public:
+	int x;
+	int y;
+	int z;
+};
+
 NS_MS_END;
 
 #endif /* defined(__HelloCpp__MSGeometry__) */

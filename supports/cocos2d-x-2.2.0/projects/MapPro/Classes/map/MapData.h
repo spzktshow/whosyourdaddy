@@ -9,11 +9,10 @@
 #ifndef __HelloCpp__MapData__
 #define __HelloCpp__MapData__
 
-#include "MoonSugar.h"
 #include "MSGeometry.h"
 #include <vector>
 #include <cocos2d.h>
-#include <math.h>
+#include "MSMvc.h"
 
 /*******MapNode***********/
 class MapNode : public cocos2d::CCObject
@@ -98,4 +97,17 @@ public:
 	static MapNode* createMapNode(int rowIndex, int colIndex);
 };
 
+/********MapModel**********/
+class MapModel : public moonSugar::MSModelData
+{
+public:
+	MapModel();
+	~MapModel();
+
+	virtual void MapModel::init();
+	virtual void MapModel::dispose();
+
+	Map* map;
+protected:
+};
 #endif /* defined(__HelloCpp__MapData__) */

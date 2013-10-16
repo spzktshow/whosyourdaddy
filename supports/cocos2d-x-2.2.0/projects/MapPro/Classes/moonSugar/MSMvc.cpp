@@ -31,11 +31,22 @@ void MSModel::release()
 
 MSModelData::MSModelData()
 {
-    notificationCenter = CCNotificationCenter::sharedNotificationCenter();
+	init();
 }
 
 MSModelData::~MSModelData()
 {
-    notificationCenter = NULL;
+	dispose();
 }
+
+void MSModelData::init()
+{
+	notificationCenter = CCNotificationCenter::sharedNotificationCenter();
+}
+
+void MSModelData::dispose()
+{
+	notificationCenter = NULL;
+}
+
 NS_MS_END;

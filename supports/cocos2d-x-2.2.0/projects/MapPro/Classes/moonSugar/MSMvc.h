@@ -19,7 +19,10 @@ class MSModelData : public MSGroupItem
 {
 public:
     MSModelData();
-    virtual ~MSModelData();
+    ~MSModelData();
+
+	virtual void init();
+	virtual void dispose();
 protected:
     cocos2d::CCNotificationCenter* notificationCenter;
 };

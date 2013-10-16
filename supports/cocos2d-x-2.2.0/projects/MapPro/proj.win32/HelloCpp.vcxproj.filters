@@ -39,6 +39,9 @@
     <ClCompile Include="..\Classes\moonSugar\MSMvc.cpp">
       <Filter>Classes\moonSugar</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\map\MapView.cpp">
+      <Filter>Classes\map</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -64,6 +67,9 @@
     </ClInclude>
     <ClInclude Include="..\Classes\moonSugar\MSMvc.h">
       <Filter>Classes\moonSugar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\map\MapView.h">
+      <Filter>Classes\map</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -16,5 +16,11 @@
 #define USING_NS_MS using namespace moonSugar
 #endif
 
+#ifdef max
+#undef max
+#endif
+#ifdef min
+#undef min
+#endif
 
 #endif /* defined(__HelloCpp__MoonSugar__) */

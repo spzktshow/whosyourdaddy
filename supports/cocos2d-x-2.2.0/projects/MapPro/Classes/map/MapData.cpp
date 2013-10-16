@@ -7,7 +7,8 @@
 //
 
 #include "MapData.h"
-
+#include "MoonSugar.h"
+#include <cmath>
 USING_NS_MS;
 USING_NS_CC;
 
@@ -236,4 +237,27 @@ MapNode* MapUtils::searchPath(int startRowIndex, int startColIndex, int endRowIn
 	delete openList;
 	delete closeList;
 	return searchNode;
+}
+
+/************MapModel***************/
+MapModel::MapModel()
+{}
+
+MapModel::~MapModel()
+{}
+
+void MapModel::init()
+{
+	MSModelData::init();
+
+	MSNode* node = new MSNode(20, 20, 0, 0);
+	map = new Map(node);
+	delete node;
+}
+
+void MapModel::dispose()
+{
+	delete map;
+
+	MSModelData::dispose();
 }
