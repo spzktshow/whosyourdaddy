@@ -7,7 +7,7 @@
 //
 
 #include "MSGroup.h"
-
+USING_NS_CC;
 NS_MS_BEGIN
 /**************Group******/
 MSGroup::MSGroup()

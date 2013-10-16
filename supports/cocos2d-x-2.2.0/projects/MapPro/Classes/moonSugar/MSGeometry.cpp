@@ -8,6 +8,7 @@
 
 #include "MSGeometry.h"
 
+USING_NS_CC;
 NS_MS_BEGIN
 /***Matrix**/
 MSMatrix::MSMatrix(int col, int row)

@@ -11,7 +11,6 @@
 #include <cocos2d.h>
 #include "MoonSugar.h"
 
-USING_NS_CC;
 NS_MS_BEGIN
 /********Matrix****/
 class MSMatrix

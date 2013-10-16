@@ -8,6 +8,7 @@
 
 #include "MSMvc.h"
 
+USING_NS_CC;
 NS_MS_BEGIN
 
 /*****************model****************/

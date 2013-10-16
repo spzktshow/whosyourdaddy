@@ -11,15 +11,15 @@
 
 #include "MoonSugar.h"
 #include <cocos2d.h>
-USING_NS_CC;
+
 NS_MS_BEGIN
-class MSGroupItem : public CCObject
+class MSGroupItem : public cocos2d::CCObject
 {
 public:
     char* name;
 };
 
-class MSGroup : public CCObject
+class MSGroup : public cocos2d::CCObject
 {
 public:
     MSGroup();
@@ -34,7 +34,7 @@ public:
     MSGroupItem* removeItem(const char* name);
     MSGroupItem* removeItemIndex(unsigned int index);
 protected:
-    CCArray* items;
+    cocos2d::CCArray* items;
     //return index
     int checkItem(const char* name);
 };

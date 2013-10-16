@@ -8,6 +8,9 @@
 
 #include "MapData.h"
 
+USING_NS_MS;
+USING_NS_CC;
+
 /*******Map*******/
 Map::Map(MSNode* msNode)
 {

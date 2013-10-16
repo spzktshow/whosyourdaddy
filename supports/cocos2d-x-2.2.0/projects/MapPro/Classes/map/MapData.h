@@ -15,14 +15,11 @@
 #include <cocos2d.h>
 #include <math.h>
 
-USING_NS_MS;
-USING_NS_CC;
-
 /*******MapNode***********/
-class MapNode : public CCObject
+class MapNode : public cocos2d::CCObject
 {
 public:
-    MSNode* nodeData;
+    moonSugar::MSNode* nodeData;
 
 	/**h+g**/
 	int f;
@@ -44,19 +41,19 @@ public:
 };
 
 /**********MapItem********/
-class MapItem : public CCObject
+class MapItem : public cocos2d::CCObject
 {
 public:
-    MSNode* nodeData;
+    moonSugar::MSNode* nodeData;
 };
 
 /**********Map***************/
-class Map : public CCObject
+class Map : public cocos2d::CCObject
 {
 public:
-    MSNode* nodeData;
+    moonSugar::MSNode* nodeData;
 
-	Map(MSNode* msNode);
+	Map(moonSugar::MSNode* msNode);
 	~Map();
 
 	/**检测节点是否合法**/
@@ -69,11 +66,11 @@ public:
 	/**销毁节点**/
 	void disposeNodes();
 protected:
-    CCArray* nodes;
+    cocos2d::CCArray* nodes;
 };
 
 /***********MapUtils******/
-class MapUtils : public CCObject
+class MapUtils : public cocos2d::CCObject
 {
 public:
 	/**寻路方法**/
@@ -85,18 +82,18 @@ public:
 	/*****计算当前节点到终点的h值***/
 	static int calculateH(MapNode* current, MapNode* end);
 	/********获取openList中最小值的f节点**********/
-	static MapNode* getMinF(CCArray* openList);
+	static MapNode* getMinF(cocos2d::CCArray* openList);
 	/****************清理开放列表*****************/
-	static void clearOpenList(CCArray* openList);
+	static void clearOpenList(cocos2d::CCArray* openList);
 	/***************清理关闭列表***********************/
-	static void clearCloseList(CCArray* closeList);
+	static void clearCloseList(cocos2d::CCArray* closeList);
 };
 
 /********MapFactory********/
 class MapFactory
 {
 public:
-	static MSNode* createNode(int rowIndex, int colIndex, int row, int col);
+	static moonSugar::MSNode* createNode(int rowIndex, int colIndex, int row, int col);
 
 	static MapNode* createMapNode(int rowIndex, int colIndex);
 };

@@ -13,8 +13,6 @@
 #include "MoonSugar.h"
 #include "MSGroup.h"
 
-USING_NS_CC;
-
 NS_MS_BEGIN
 /********model********/
 class MSModelData : public MSGroupItem
@@ -23,7 +21,7 @@ public:
     MSModelData();
     virtual ~MSModelData();
 protected:
-    CCNotificationCenter* notificationCenter;
+    cocos2d::CCNotificationCenter* notificationCenter;
 };
 
 class MSModel : public MSGroup
@@ -36,7 +34,7 @@ protected:
 };
 
 /********controller******/
-class MSCommand : public CCObject
+class MSCommand : public cocos2d::CCObject
 {
 public:
     virtual void execute(const char* type, CCObject* data);
