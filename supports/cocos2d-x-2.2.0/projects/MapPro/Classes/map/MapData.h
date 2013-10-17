@@ -80,6 +80,11 @@ public:
 	static bool checkNode(MapNode* a, MapNode* b);
 	/*****计算当前节点到终点的h值***/
 	static int calculateH(MapNode* current, MapNode* end);
+
+	/******ISO Map*****/
+	static moonSugar::MSPoint3D convertIso(cocos2d::CCPoint & point);
+	static cocos2d::CCPoint convertScreen(moonSugar::MSPoint3D & point3D);
+private:
 	/********获取openList中最小值的f节点**********/
 	static MapNode* getMinF(cocos2d::CCArray* openList);
 	/****************清理开放列表*****************/
@@ -93,6 +98,9 @@ class MapFactory
 {
 public:
 	static moonSugar::MSNode* createNode(int rowIndex, int colIndex, int row, int col);
+
+	static moonSugar::MSNode3D* createNode3D(int xIndex, int yIndex, int zIndex, int x, int y, int z);
+	static moonSugar::MSNode3D* createNode3D(int rowIndex, int colIndex, int row, int col);
 
 	static MapNode* createMapNode(int rowIndex, int colIndex);
 };

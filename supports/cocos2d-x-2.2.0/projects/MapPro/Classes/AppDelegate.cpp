@@ -32,12 +32,13 @@ bool AppDelegate::applicationDidFinishLaunching() {
 	//
 	/*****在程序生命周期内持续存在,直到从model中remove时才delete***/
 	MapModel* mapModel = new MapModel();
+	model->registerModel(mapModel);
 
 	MapScene* scene = MapScene::create();
 	MapTileLayer* mapTileLayer = MapTileLayer::create();
 	scene->addChild(mapTileLayer);
-
 	mapTileLayer->setMapData(mapModel->map);
+
     // run
     pDirector->runWithScene(scene);
 

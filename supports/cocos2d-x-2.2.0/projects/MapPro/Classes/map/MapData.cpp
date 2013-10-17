@@ -74,7 +74,7 @@ MapNode* Map::getMapNode(int rowIndex, int colIndex)
 MapNode* MapFactory::createMapNode(int rowIndex, int colIndex)
 {
 	MapNode* mapNode = new MapNode();
-	MSNode* msNode = createNode(rowIndex, colIndex, 1, 1);
+	MSNode* msNode = (MSNode*)createNode3D(rowIndex, colIndex, 1, 1);
 	mapNode->nodeData = msNode;
 	mapNode->isClose = false;
 	mapNode->isOpen = false;
@@ -91,6 +91,17 @@ MSNode* MapFactory::createNode(int rowIndex, int colIndex, int row, int col)
 	return msNode;
 }
 
+MSNode3D* MapFactory::createNode3D(int xIndex, int yIndex, int zIndex, int x, int y, int z)
+{
+	MSNode3D* msNode3D = new MSNode3D(x, y, z, xIndex, yIndex, zIndex);
+	return msNode3D;
+}
+
+MSNode3D* MapFactory::createNode3D(int rowIndex, int colIndex, int row, int col)
+{
+	MSNode3D* msNode3D = new MSNode3D(col, 0, row, colIndex, 0, rowIndex);
+	return msNode3D;
+}
 /****************MapUtils******************/
 bool MapUtils::checkAllow(MapNode* mapNode)
 {
@@ -239,6 +250,22 @@ MapNode* MapUtils::searchPath(int startRowIndex, int startColIndex, int endRowIn
 	return searchNode;
 }
 
+MSPoint3D MapUtils::convertIso(CCPoint& point)
+{
+	float x = point.y + point.x * .5;
+	float z = point.y - point.x * .5;
+	MSPoint3D point3D(x, 0, z);
+	return point3D;
+}
+
+CCPoint MapUtils::convertScreen(MSPoint3D& point3D)
+{
+	float x = point3D.x - point3D.z;
+	float y = point3D.y * 1.2247 + (point3D.x + point3D.z) * .5;
+	CCPoint point(x, y);
+	return point;
+}
+
 /************MapModel***************/
 MapModel::MapModel()
 {}
@@ -248,8 +275,7 @@ MapModel::~MapModel()
 
 void MapModel::init()
 {
-	MSModelData::init();
-
+	//this->init();
 	MSNode* node = new MSNode(20, 20, 0, 0);
 	map = new Map(node);
 	delete node;
@@ -258,6 +284,5 @@ void MapModel::init()
 void MapModel::dispose()
 {
 	delete map;
-
-	MSModelData::dispose();
+	//this->dispose();
 }

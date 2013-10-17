@@ -27,26 +27,49 @@ void MSModel::release()
 {
     delete model;
 }
+
+void MSModel::registerModel(MSModelData* modelData)
+{
+	int index = this->addItem(modelData);
+	if (index != -1)
+	{
+		modelData->init();
+	}
+}
+
+void MSModel::removeModel(MSModelData* modelData)
+{
+	modelData = (MSModelData*) this->removeItem(modelData->name);
+	modelData->dispose();
+
+	delete modelData;
+}
 /***************modelData***************/
 
 MSModelData::MSModelData()
 {
-	init();
+	notificationCenter = CCNotificationCenter::sharedNotificationCenter();
 }
 
 MSModelData::~MSModelData()
 {
-	dispose();
+	notificationCenter = NULL;
 }
 
 void MSModelData::init()
 {
-	notificationCenter = CCNotificationCenter::sharedNotificationCenter();
+
+
 }
 
 void MSModelData::dispose()
 {
-	notificationCenter = NULL;
+
 }
 
+
+MSModelData* MSModel::createModelData()
+{
+	return NULL;
+}
 NS_MS_END;

@@ -32,6 +32,11 @@ class MSModel : public MSGroup
 public:
     static MSModel* getInstance();
     static void release();
+
+	virtual void registerModel(MSModelData* modelData);
+	virtual void removeModel(MSModelData* modelData);
+
+	virtual MSModelData* createModelData();
 protected:
     static MSModel* model;
 };

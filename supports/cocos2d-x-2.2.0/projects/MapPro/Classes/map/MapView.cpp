@@ -1,6 +1,8 @@
 #include "MapView.h"
+#include "MSGeometry.h"
 
 USING_NS_CC;
+USING_NS_MS;
 /******************MapView**********************/
 void MapView::setMapData(Map* mapData)
 {
@@ -22,15 +24,49 @@ MapTileLayer::~MapTileLayer()
 
 void MapTileLayer::draw()
 {
-	//CCLayer::draw();
-	CHECK_GL_ERROR_DEBUG();
-	CCPoint a;
-	a.x = 10;
-	a.y = 10;
-	CCPoint b;
-	b.y = 40;
-	b.x = 40;
-	ccDrawLine(a, b);
+	if (map)
+	{
+		CHECK_GL_ERROR_DEBUG();
+		CCDirector* direct = CCDirector::sharedDirector();
+
+		CCPoint a;
+		a.x = 10;
+		a.y = CoordinateUtils::calculateCoordinateSystem(10, direct->getWinSize());
+		CCPoint b;
+		b.x = 40;
+		b.y = CoordinateUtils::calculateCoordinateSystem(40, direct->getWinSize());
+
+		CCSize size;
+		size.width = 50;
+		size.height = 50;
+
+
+		MSPoint3D topLeft(0, 0, 0);
+		MSPoint3D topRight(50, 0, 0);
+		MSPoint3D bottomLeft(0, 0, 50);
+		MSPoint3D bottomRight(50, 0, 50);
+
+
+		CCPoint tl = MapUtils::convertScreen(topLeft);
+		CCPoint bl = MapUtils::convertScreen(bottomLeft);
+		CCPoint tr = MapUtils::convertScreen(topRight);
+		CCPoint br = MapUtils::convertScreen(bottomRight);
+
+		tl.y = CoordinateUtils::calculateCoordinateSystem(tl.y, direct->getWinSize());
+		bl.y = CoordinateUtils::calculateCoordinateSystem(bl.y, direct->getWinSize());
+		tr.y = CoordinateUtils::calculateCoordinateSystem(tr.y, direct->getWinSize());
+		br.y = CoordinateUtils::calculateCoordinateSystem(br.y, direct->getWinSize());
+
+		ccDrawLine(tl, tr);	
+		ccDrawLine(tr, br);	
+		ccDrawLine(br, bl);	
+		ccDrawLine(bl, tl);	
+	}
+	else
+	{
+		CCLayer::draw();
+	}
+
 }
 
 bool MapTileLayer::init()
