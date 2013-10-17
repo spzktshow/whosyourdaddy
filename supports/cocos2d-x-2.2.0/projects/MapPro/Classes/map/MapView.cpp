@@ -90,6 +90,14 @@ MapTileLayer* MapTileLayer::create()
 	}
 }
 
+/***********************MapBackGroud********************/
+void MapBackGround::setMapData(Map* mapData)
+{
+	//2600 * 1300;
+	CCSprite* background = CCSprite::create("HelloWorld.png");
+	this->addChild(background);
+}
+
 /***************************MapScene*********************/
 MapScene::MapScene()
 {

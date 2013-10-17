@@ -22,6 +22,12 @@ public:
 	static MapTileLayer* create();
 };
 
+class MapBackGround : public cocos2d::CCLayer, public MapView
+{
+public:
+	virtual void setMapData(Map* mapData);
+};
+
 class MapScene : public cocos2d::CCScene, public MapView
 {
 public:
