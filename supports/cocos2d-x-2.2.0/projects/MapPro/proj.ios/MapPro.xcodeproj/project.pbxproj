@@ -233,6 +233,8 @@
 		379BB9D217F03F3700829B88 /* sconscript in Resources */ = {isa = PBXBuildFile; fileRef = 379BB98D17F03F3700829B88 /* sconscript */; };
 		379BB9D317F03F3700829B88 /* CCSGUIReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 379BB99117F03F3700829B88 /* CCSGUIReader.cpp */; };
 		379BB9D417F03F3700829B88 /* CCSSceneReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 379BB99317F03F3700829B88 /* CCSSceneReader.cpp */; };
+		641437921810D38700800B04 /* MapView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 641437901810D38700800B04 /* MapView.cpp */; };
+		641437941810D78800800B04 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = 641437931810D78800800B04 /* map.png */; };
 		64C00D13180C25050082EF5C /* MapData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64C00D11180C25050082EF5C /* MapData.cpp */; };
 		64C00D1D180C25180082EF5C /* MoonSugar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64C00D15180C25180082EF5C /* MoonSugar.cpp */; };
 		64C00D1E180C25180082EF5C /* MSGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64C00D17180C25180082EF5C /* MSGeometry.cpp */; };
@@ -733,6 +735,9 @@
 		379BB99217F03F3700829B88 /* CCSGUIReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCSGUIReader.h; sourceTree = "<group>"; };
 		379BB99317F03F3700829B88 /* CCSSceneReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCSSceneReader.cpp; sourceTree = "<group>"; };
 		379BB99417F03F3700829B88 /* CCSSceneReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCSSceneReader.h; sourceTree = "<group>"; };
+		641437901810D38700800B04 /* MapView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MapView.cpp; sourceTree = "<group>"; };
+		641437911810D38700800B04 /* MapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapView.h; sourceTree = "<group>"; };
+		641437931810D78800800B04 /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
 		64C00D11180C25050082EF5C /* MapData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MapData.cpp; sourceTree = "<group>"; };
 		64C00D12180C25050082EF5C /* MapData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapData.h; sourceTree = "<group>"; };
 		64C00D15180C25180082EF5C /* MoonSugar.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MoonSugar.cpp; sourceTree = "<group>"; };
@@ -1726,6 +1731,8 @@
 		64C00D10180C25050082EF5C /* map */ = {
 			isa = PBXGroup;
 			children = (
+				641437901810D38700800B04 /* MapView.cpp */,
+				641437911810D38700800B04 /* MapView.h */,
 				64C00D11180C25050082EF5C /* MapData.cpp */,
 				64C00D12180C25050082EF5C /* MapData.h */,
 			);
@@ -1752,6 +1759,7 @@
 		78C7DDAA14EBA5050085D0C2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				641437931810D78800800B04 /* map.png */,
 				1AFAF8B916D35E4900DB1158 /* CloseNormal.png */,
 				1AFAF8BA16D35E4900DB1158 /* CloseSelected.png */,
 				1AFAF8BB16D35E4900DB1158 /* HelloWorld.png */,
@@ -1851,6 +1859,7 @@
 				379BB9CD17F03F3700829B88 /* json_internalmap.inl in Resources */,
 				379BB9D017F03F3700829B88 /* json_valueiterator.inl in Resources */,
 				379BB9D217F03F3700829B88 /* sconscript in Resources */,
+				641437941810D78800800B04 /* map.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2078,6 +2087,7 @@
 				64C00D1E180C25180082EF5C /* MSGeometry.cpp in Sources */,
 				64C00D1F180C25180082EF5C /* MSGroup.cpp in Sources */,
 				64C00D20180C25180082EF5C /* MSMvc.cpp in Sources */,
+				641437921810D38700800B04 /* MapView.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -112,8 +112,8 @@ public:
 	MapModel();
 	~MapModel();
 
-	virtual void MapModel::init();
-	virtual void MapModel::dispose();
+	virtual void init();
+	virtual void dispose();
 
 	Map* map;
 protected:

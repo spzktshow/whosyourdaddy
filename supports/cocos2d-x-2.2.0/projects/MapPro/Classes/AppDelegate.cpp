@@ -33,17 +33,16 @@ bool AppDelegate::applicationDidFinishLaunching() {
 	/*****在程序生命周期内持续存在,直到从model中remove时才delete***/
 	MapModel* mapModel = new MapModel();
 	model->registerModel(mapModel);
-	CCScene *pScene = HelloWorld::scene();
-	////MapScene* scene = MapScene::create();
-	//MapTileLayer* mapTileLayer = MapTileLayer::create();
-	//CCSprite* bg = CCSprite::create("HelloWorld.png");
-	//bg->setPosition(ccp(0, 0));
-	//mapTileLayer->addChild(bg);
-	//scene->addChild(mapTileLayer);
-	//mapTileLayer->setMapData(mapModel->map);
+	MapScene* scene = MapScene::create();
+	MapTileLayer* mapTileLayer = MapTileLayer::create();
+	CCSprite* bg = CCSprite::create("map.png");
+	bg->setPosition(ccp(0, 0));
+	mapTileLayer->addChild(bg);
+	scene->addChild(mapTileLayer);
+	mapTileLayer->setMapData(mapModel->map);
 
     // run
-    pDirector->runWithScene(pScene);
+    pDirector->runWithScene(scene);
 
     return true;
 }
